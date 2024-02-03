@@ -61,3 +61,8 @@ python3 -m venv venv
 source venv/bin/activate && \
 pip3 install -r requirements.txt
 ```
+
+## Executing Tests
+```bash
+python -m unittest discover -s tests -v
+```
