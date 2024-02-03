@@ -26,14 +26,29 @@ Built and tested with python `3.11.6`, all dependencies are frozen and pinned in
 
 ## Running
 Follow the steps in [Setup](#setup) first
+
+## Help
+There is argument parsing at all levels, just tack on -h to see usage instructions, examples:
+```bash
+python3 main.py -h
+python3 main.py gui -h
+python3 main.py headless oneliner -h
+```
+
 ### GUI
 ```bash
-python3 ... TODO - add
+python3 main.py gui
 ```
 
 ### Headless
+#### OneLiner
 ```bash
-python3 ... TODO - add
+python3 main.py headless oneliner 0,0,1,2,6,0...
+```
+
+#### File
+```bash
+python3 main.py headless file puzzle.txt
 ```
 
 ## Setup
