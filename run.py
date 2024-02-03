@@ -47,10 +47,14 @@ class Run:
             board.append(temp_row)
 
         if len(board) != 9:
-            raise RuntimeError("Your oneliner input is not valid, you don't have 9 rows!")
+            raise RuntimeError(
+                "Your oneliner input is not valid, you don't have 9 rows!"
+            )
 
         for row in board:
             if len(row) != 9:
-                raise RuntimeError("Your oneliner input is not valid, a row doesn't have 9 digits!")
+                raise RuntimeError(
+                    "Your oneliner input is not valid, a row doesn't have 9 digits!"
+                )
 
         return Solver().solve(board), board
