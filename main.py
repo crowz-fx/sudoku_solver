@@ -19,6 +19,7 @@ from pprint import pprint
 
 from args import Args
 from run import Run
+from file import FileUtils
 
 args = Args.process()
 
@@ -31,11 +32,29 @@ if __name__ == "__main__":
 
         gui.load()
         gui.run()
-    elif hasattr(args, "oneliner"):
-        print(f"OneLiner=[{args.oneliner}], Output=[{args.output}]")
-        result, final_board = Run().process_oneliner(args.oneliner)
+    else:
+        result = False
+        final_board = []
+        output = args.output
+
+        if hasattr(args, "oneliner"):
+            print(f"OneLiner=[{args.oneliner}], Output=[{output}]")
+            result, final_board = Run().process_oneliner(args.oneliner)
+            
+        elif hasattr(args, "file"):
+            print(f"File=[{args.file}], Output=[{output}]")
+            result, final_board = Run().process_file(args.file)
         
         print(f"Solved? - {result}")
-        pprint(final_board)
-    elif hasattr(args, "file"):
-        print(f"File=[{args.file}], Output=[{args.output}]")
+        if output == "file":
+            file_contents = []
+            file = "output.txt"
+
+            for board_row in final_board:
+                file_contents.append(','.join(map(str, board_row)))
+                file_contents.append("\n")
+
+            FileUtils.write_file(file, file_contents)
+            print(f"Output written to file [{file}]")
+        else:
+            pprint(final_board)

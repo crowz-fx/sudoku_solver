@@ -1,4 +1,22 @@
+"""
+    Copyright (C) 2024  Lui Crowie (@crowz-fx)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 from solver import Solver
+from file import FileUtils
 
 
 class Run:
@@ -56,5 +74,30 @@ class Run:
                 raise RuntimeError(
                     "Your oneliner input is not valid, a row doesn't have 9 digits!"
                 )
+
+        return Solver().solve(board), board
+
+    def process_file(self, file_name):
+        """
+        Read the file supplied by user, process the contents into the required format
+        for the `solve()` function
+
+        Parameters
+        ----------
+        file_name : str
+            Name of the file that contains the puzzle
+
+        Return
+        ------
+        tuple
+          (True/False, list[list[int]]) - Result from solve and where the board
+          processing ended (would be complete if solveable)
+        """
+        file_contents = FileUtils.read_file(file_name)
+        board = []
+
+        for line in file_contents:
+            line = line.replace("\n", "")
+            board.append(list(map(int, line.split(","))))
 
         return Solver().solve(board), board
