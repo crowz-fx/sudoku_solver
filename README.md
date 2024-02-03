@@ -11,7 +11,7 @@ Sudoku solver that can operate in two modes `headless` and `gui`
 - Displays time taken to solve
 - Operation counts
 
-### GUI
+### GUI 
 - Ability to input a puzzle to be solved
 - Can generate a new puzzle that you can input or ask to be solved
 
