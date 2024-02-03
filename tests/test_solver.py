@@ -1,3 +1,20 @@
+"""
+    Copyright (C) 2024  Lui Crowie (@crowz-fx)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 import unittest
 
 from solver import Solver
@@ -7,7 +24,7 @@ class TestSolver(unittest.TestCase):
 
     def test_find_next_cell_to_solve_with_no_empties(self):
         """
-        Test that when run and there is no empty cells
+        test that when run and there is no empty cells
         """
         board = [
             [4, 3, 8, 1, 2, 7, 5, 9, 6],
@@ -25,7 +42,7 @@ class TestSolver(unittest.TestCase):
 
     def test_find_next_cell_to_solve_with_empties(self):
         """
-        Test that when run and there is empty cells
+        test that when run and there is empty cells
         """
         board = [
             [4, 3, 8, 1, 2, 7, 5, 9, 0],
@@ -43,7 +60,7 @@ class TestSolver(unittest.TestCase):
 
     def test_check_guess_is_valid_with_valid(self):
         """
-        Test that when run and the guess is valid
+        test that when run and the guess is valid
         """
         board = [
             [4, 3, 8, 0, 2, 7, 5, 9, 6],
@@ -61,7 +78,7 @@ class TestSolver(unittest.TestCase):
 
     def test_check_guess_is_valid_with_invalid(self):
         """
-        Test that when run and the guess is not valid
+        test that when run and the guess is not valid
         """
         board = [
             [4, 3, 8, 0, 2, 7, 5, 9, 6],
@@ -79,7 +96,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_insolvable(self):
         """
-        Test solve that cannot be solved
+        test solve that cannot be solved
         """
         board = [
             [3, 3, 0, 8, 1, 8, 5, 9, 6],
@@ -97,7 +114,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_solvable_master(self):
         """
-        Test solve with an master level puzzle
+        test solve with an master level puzzle
         """
         board = [
             [4, 3, 8, 0, 0, 0, 0, 0, 0],
@@ -127,7 +144,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_solvable_expert(self):
         """
-        Test solve with an expert level puzzle
+        test solve with an expert level puzzle
         """
         board = [
             [4, 9, 6, 0, 0, 0, 0, 0, 0],
@@ -157,7 +174,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_solvable_hard(self):
         """
-        Test solve with an hard level puzzle
+        test solve with an hard level puzzle
         """
         board = [
             [3, 0, 0, 0, 9, 0, 0, 6, 0],
@@ -187,7 +204,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_solvable_medium(self):
         """
-        Test solve with an medium level puzzle
+        test solve with an medium level puzzle
         """
         board = [
             [0, 0, 0, 4, 0, 6, 0, 0, 2],
@@ -217,7 +234,7 @@ class TestSolver(unittest.TestCase):
 
     def test_solve_with_solvable_easy(self):
         """
-        Test solve with an easy level puzzle
+        test solve with an easy level puzzle
         """
         board = [
             [3, 0, 0, 2, 0, 8, 7, 0, 0],
