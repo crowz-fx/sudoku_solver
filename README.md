@@ -1,4 +1,4 @@
-[![Python Install and Test](https://github.com/crowz-fx/sudoku_solver/actions/workflows/intall-and-test.yaml/badge.svg)](https://github.com/crowz-fx/sudoku_solver/actions/workflows/intall-and-test.yaml)
+[![Tests](https://github.com/crowz-fx/sudoku_solver/actions/workflows/install-and-test.yaml/badge.svg)](https://github.com/crowz-fx/sudoku_solver/actions/workflows/install-and-test.yaml)
 
 # sudoku_solver
 Python application to solve sudoku puzzles
