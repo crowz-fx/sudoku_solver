@@ -15,7 +15,10 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
+from pprint import pprint
+
 from args import Args
+from run import Run
 
 args = Args.process()
 
@@ -30,5 +33,9 @@ if __name__ == "__main__":
         gui.run()
     elif hasattr(args, "oneliner"):
         print(f"OneLiner=[{args.oneliner}], Output=[{args.output}]")
+        result, final_board = Run().process_oneliner(args.oneliner)
+        
+        print(f"Solved? - {result}")
+        pprint(final_board)
     elif hasattr(args, "file"):
         print(f"File=[{args.file}], Output=[{args.output}]")
