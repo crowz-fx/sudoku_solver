@@ -18,7 +18,9 @@ Sudoku solver that can operate in two modes `headless` and `gui`
 TODO - add screenshot
 
 ### Headless
-- Can supply a puzzle in a <b>oneliner</b> parameter or from a file
+- Can supply a puzzle in two ways
+  - `oneliner` - one continuous csv string of the puzzle
+  - `file` - file with puzzle within 
 - Will output the solved puzzle to either console or a file depending on parameter supplied
 
 TODO - add screenshot
