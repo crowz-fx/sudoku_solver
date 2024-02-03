@@ -147,5 +147,4 @@ class Gui:
             square.setPlainText(value)
 
     def clear_board(self):
-        print("clicked clear")
         self.set_board_values("")
