@@ -15,6 +15,8 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
+import sys
+
 
 class FileUtils:
     """
@@ -25,27 +27,39 @@ class FileUtils:
         """"""
         pass
 
-    def write_file(self, file_name, file_contents):
+    @staticmethod
+    def write_file(file_name, file_contents):
         """Takes contents input and writes out to specified file
 
         Parameters
         ----------
         file_name : str
           Relative path and name of file to write to
-        file_contents : str
+        file_contents : list[str]
           Contents, already formatted to write to file
 
+        Raises
+        ------
+        Exception
+          Generic exception if something unexpected happens like file-system un-writable
         """
-        # TODO - implement
-        pass
+        try:
+            with open(file_name, "w") as file:
+                file.writelines(file_contents)
+        except Exception as error:
+            print(f"Error occured writing to file [{file_name}]")
+            raise
 
-    def read_file(self, file_name):
+    @staticmethod
+    def read_file(file_name, open_mode="r"):
         """Reads the contents of file_name and returns
 
         Parameters
         ----------
         file_name : str
           Relative path and name of file to read
+        open_mode : str
+          Attribute for opening the file
 
         Returns
         -------
@@ -54,9 +68,14 @@ class FileUtils:
 
         Raises
         ------
-        FileNotFound
+        FileNotFoundError
           If file cant not be found or opened
 
         """
-        # TODO - implement
-        pass
+        try:
+            with open(file_name, open_mode) as file:
+                file_contents = file.readlines()
+            return file_contents
+        except FileNotFoundError as error:
+            print(f"Dude, where the f is the file [{file_name}]?")
+            raise
