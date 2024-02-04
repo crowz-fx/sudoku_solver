@@ -147,7 +147,7 @@
          <item>
           <widget class="QLabel" name="statusLabel">
            <property name="text">
-            <string>Not Solved</string>
+            <string>Ready</string>
            </property>
           </widget>
          </item>
@@ -171,7 +171,7 @@
       <number>0</number>
      </property>
      <item row="8" column="6">
-      <widget class="QPlainTextEdit" name="txtRow6Col5">
+      <widget class="QLineEdit" name="txtRow6Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -184,16 +184,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="10">
-      <widget class="QPlainTextEdit" name="txtRow2Col8">
+      <widget class="QLineEdit" name="txtRow2Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -206,16 +212,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="5">
-      <widget class="QPlainTextEdit" name="txtRow6Col4">
+      <widget class="QLineEdit" name="txtRow6Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -228,16 +240,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="0">
-      <widget class="QPlainTextEdit" name="txtRow6Col0">
+      <widget class="QLineEdit" name="txtRow6Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -250,16 +268,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="8">
-      <widget class="QPlainTextEdit" name="txtRow5Col6">
+      <widget class="QLineEdit" name="txtRow5Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -272,16 +296,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="6">
-      <widget class="QPlainTextEdit" name="txtRow3Col5">
+      <widget class="QLineEdit" name="txtRow3Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -294,16 +324,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="8">
-      <widget class="QPlainTextEdit" name="txtRow3Col6">
+      <widget class="QLineEdit" name="txtRow3Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -316,16 +352,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QPlainTextEdit" name="txtRow8Col1">
+      <widget class="QLineEdit" name="txtRow8Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -338,16 +380,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="5">
-      <widget class="QPlainTextEdit" name="txtRow1Col4">
+      <widget class="QLineEdit" name="txtRow1Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -360,16 +408,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QPlainTextEdit" name="txtRow0Col1">
+      <widget class="QLineEdit" name="txtRow0Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -382,16 +436,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="0">
-      <widget class="QPlainTextEdit" name="txtRow8Col0">
+      <widget class="QLineEdit" name="txtRow8Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -404,16 +464,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="9">
-      <widget class="QPlainTextEdit" name="txtRow2Col7">
+      <widget class="QLineEdit" name="txtRow2Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -426,10 +492,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -442,7 +514,7 @@
       </widget>
      </item>
      <item row="6" column="9">
-      <widget class="QPlainTextEdit" name="txtRow5Col7">
+      <widget class="QLineEdit" name="txtRow5Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -455,16 +527,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QPlainTextEdit" name="txtRow2Col0">
+      <widget class="QLineEdit" name="txtRow2Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -477,16 +555,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QPlainTextEdit" name="txtRow3Col1">
+      <widget class="QLineEdit" name="txtRow3Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -499,16 +583,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="10">
-      <widget class="QPlainTextEdit" name="txtRow1Col8">
+      <widget class="QLineEdit" name="txtRow1Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -521,16 +611,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="0">
-      <widget class="QPlainTextEdit" name="txtRow5Col0">
+      <widget class="QLineEdit" name="txtRow5Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -543,16 +639,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="10">
-      <widget class="QPlainTextEdit" name="txtRow6Col8">
+      <widget class="QLineEdit" name="txtRow6Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -565,16 +667,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="6">
-      <widget class="QPlainTextEdit" name="txtRow2Col5">
+      <widget class="QLineEdit" name="txtRow2Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -587,16 +695,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="9">
-      <widget class="QPlainTextEdit" name="txtRow7Col7">
+      <widget class="QLineEdit" name="txtRow7Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -609,16 +723,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="10">
-      <widget class="QPlainTextEdit" name="txtRow0Col8">
+      <widget class="QLineEdit" name="txtRow0Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -631,10 +751,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -647,7 +773,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QPlainTextEdit" name="txtRow4Col1">
+      <widget class="QLineEdit" name="txtRow4Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -660,16 +786,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QPlainTextEdit" name="txtRow4Col2">
+      <widget class="QLineEdit" name="txtRow4Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -682,16 +814,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QPlainTextEdit" name="txtRow0Col0">
+      <widget class="QLineEdit" name="txtRow0Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -704,16 +842,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="8">
-      <widget class="QPlainTextEdit" name="txtRow4Col6">
+      <widget class="QLineEdit" name="txtRow4Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -726,16 +870,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="QPlainTextEdit" name="txtRow3Col3">
+      <widget class="QLineEdit" name="txtRow3Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -748,16 +898,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="4">
-      <widget class="QPlainTextEdit" name="txtRow0Col3">
+      <widget class="QLineEdit" name="txtRow0Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -770,16 +926,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="4">
-      <widget class="QPlainTextEdit" name="txtRow2Col3">
+      <widget class="QLineEdit" name="txtRow2Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -792,16 +954,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="4">
-      <widget class="QPlainTextEdit" name="txtRow5Col3">
+      <widget class="QLineEdit" name="txtRow5Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -814,16 +982,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="5">
-      <widget class="QPlainTextEdit" name="txtRow2Col4">
+      <widget class="QLineEdit" name="txtRow2Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -836,10 +1010,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -852,7 +1032,7 @@
       </widget>
      </item>
      <item row="1" column="4">
-      <widget class="QPlainTextEdit" name="txtRow1Col3">
+      <widget class="QLineEdit" name="txtRow1Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -865,16 +1045,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="6">
-      <widget class="QPlainTextEdit" name="txtRow5Col5">
+      <widget class="QLineEdit" name="txtRow5Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -887,16 +1073,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="8">
-      <widget class="QPlainTextEdit" name="txtRow1Col6">
+      <widget class="QLineEdit" name="txtRow1Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -909,16 +1101,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="2">
-      <widget class="QPlainTextEdit" name="txtRow8Col2">
+      <widget class="QLineEdit" name="txtRow8Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -931,16 +1129,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="5">
-      <widget class="QPlainTextEdit" name="txtRow7Col4">
+      <widget class="QLineEdit" name="txtRow7Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -953,16 +1157,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="4">
-      <widget class="QPlainTextEdit" name="txtRow7Col3">
+      <widget class="QLineEdit" name="txtRow7Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -975,16 +1185,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="9">
-      <widget class="QPlainTextEdit" name="txtRow3Col7">
+      <widget class="QLineEdit" name="txtRow3Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -997,16 +1213,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="5">
-      <widget class="QPlainTextEdit" name="txtRow5Col4">
+      <widget class="QLineEdit" name="txtRow5Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1019,16 +1241,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QPlainTextEdit" name="txtRow0Col5">
+      <widget class="QLineEdit" name="txtRow0Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1041,16 +1269,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QPlainTextEdit" name="txtRow4Col0">
+      <widget class="QLineEdit" name="txtRow4Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1063,16 +1297,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QPlainTextEdit" name="txtRow4Col3">
+      <widget class="QLineEdit" name="txtRow4Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1085,16 +1325,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="2">
-      <widget class="QPlainTextEdit" name="txtRow6Col2">
+      <widget class="QLineEdit" name="txtRow6Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1107,16 +1353,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QPlainTextEdit" name="txtRow1Col1">
+      <widget class="QLineEdit" name="txtRow1Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1129,16 +1381,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="4">
-      <widget class="QPlainTextEdit" name="txtRow6Col3">
+      <widget class="QLineEdit" name="txtRow6Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1151,16 +1409,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QPlainTextEdit" name="txtRow1Col0">
+      <widget class="QLineEdit" name="txtRow1Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1173,16 +1437,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QPlainTextEdit" name="txtRow0Col2">
+      <widget class="QLineEdit" name="txtRow0Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1195,16 +1465,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="6">
-      <widget class="QPlainTextEdit" name="txtRow7Col5">
+      <widget class="QLineEdit" name="txtRow7Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1217,16 +1493,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="6">
-      <widget class="QPlainTextEdit" name="txtRow4Col5">
+      <widget class="QLineEdit" name="txtRow4Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1239,16 +1521,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="1">
-      <widget class="QPlainTextEdit" name="txtRow7Col1">
+      <widget class="QLineEdit" name="txtRow7Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1261,16 +1549,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QPlainTextEdit" name="txtRow3Col2">
+      <widget class="QLineEdit" name="txtRow3Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1283,16 +1577,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="8">
-      <widget class="QPlainTextEdit" name="txtRow8Col6">
+      <widget class="QLineEdit" name="txtRow8Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1305,16 +1605,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="9">
-      <widget class="QPlainTextEdit" name="txtRow4Col7">
+      <widget class="QLineEdit" name="txtRow4Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1327,16 +1633,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="8">
-      <widget class="QPlainTextEdit" name="txtRow6Col6">
+      <widget class="QLineEdit" name="txtRow6Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1349,16 +1661,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QPlainTextEdit" name="txtRow6Col1">
+      <widget class="QLineEdit" name="txtRow6Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1371,16 +1689,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="8">
-      <widget class="QPlainTextEdit" name="txtRow0Col6">
+      <widget class="QLineEdit" name="txtRow0Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1393,16 +1717,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="9">
-      <widget class="QPlainTextEdit" name="txtRow8Col7">
+      <widget class="QLineEdit" name="txtRow8Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1415,16 +1745,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="10">
-      <widget class="QPlainTextEdit" name="txtRow5Col8">
+      <widget class="QLineEdit" name="txtRow5Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1437,10 +1773,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -1453,7 +1795,7 @@
       </widget>
      </item>
      <item row="9" column="2">
-      <widget class="QPlainTextEdit" name="txtRow7Col2">
+      <widget class="QLineEdit" name="txtRow7Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1466,16 +1808,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="10">
-      <widget class="QPlainTextEdit" name="txtRow4Col8">
+      <widget class="QLineEdit" name="txtRow4Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1488,16 +1836,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="10">
-      <widget class="QPlainTextEdit" name="txtRow8Col8">
+      <widget class="QLineEdit" name="txtRow8Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1510,16 +1864,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QPlainTextEdit" name="txtRow2Col2">
+      <widget class="QLineEdit" name="txtRow2Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1532,16 +1892,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="5">
-      <widget class="QPlainTextEdit" name="txtRow8Col4">
+      <widget class="QLineEdit" name="txtRow8Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1554,16 +1920,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="0">
-      <widget class="QPlainTextEdit" name="txtRow7Col0">
+      <widget class="QLineEdit" name="txtRow7Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1576,16 +1948,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="6">
-      <widget class="QPlainTextEdit" name="txtRow8Col5">
+      <widget class="QLineEdit" name="txtRow8Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1598,16 +1976,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QPlainTextEdit" name="txtRow2Col1">
+      <widget class="QLineEdit" name="txtRow2Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1620,16 +2004,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="QPlainTextEdit" name="txtRow3Col4">
+      <widget class="QLineEdit" name="txtRow3Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1642,16 +2032,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="8" column="9">
-      <widget class="QPlainTextEdit" name="txtRow6Col7">
+      <widget class="QLineEdit" name="txtRow6Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1664,16 +2060,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QPlainTextEdit" name="txtRow5Col1">
+      <widget class="QLineEdit" name="txtRow5Col1">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1686,10 +2088,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -1702,7 +2110,7 @@
       </widget>
      </item>
      <item row="9" column="10">
-      <widget class="QPlainTextEdit" name="txtRow7Col8">
+      <widget class="QLineEdit" name="txtRow7Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1715,16 +2123,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="9">
-      <widget class="QPlainTextEdit" name="txtRow0Col7">
+      <widget class="QLineEdit" name="txtRow0Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1737,16 +2151,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="9">
-      <widget class="QPlainTextEdit" name="txtRow1Col7">
+      <widget class="QLineEdit" name="txtRow1Col7">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1759,16 +2179,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="10">
-      <widget class="QPlainTextEdit" name="txtRow3Col8">
+      <widget class="QLineEdit" name="txtRow3Col8">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1781,16 +2207,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="5">
-      <widget class="QPlainTextEdit" name="txtRow0Col4">
+      <widget class="QLineEdit" name="txtRow0Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1803,16 +2235,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="6">
-      <widget class="QPlainTextEdit" name="txtRow1Col5">
+      <widget class="QLineEdit" name="txtRow1Col5">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1825,16 +2263,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="QPlainTextEdit" name="txtRow4Col4">
+      <widget class="QLineEdit" name="txtRow4Col4">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1847,16 +2291,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QPlainTextEdit" name="txtRow3Col0">
+      <widget class="QLineEdit" name="txtRow3Col0">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1869,16 +2319,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="8">
-      <widget class="QPlainTextEdit" name="txtRow2Col6">
+      <widget class="QLineEdit" name="txtRow2Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1891,16 +2347,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="6" column="2">
-      <widget class="QPlainTextEdit" name="txtRow5Col2">
+      <widget class="QLineEdit" name="txtRow5Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1913,16 +2375,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="9" column="8">
-      <widget class="QPlainTextEdit" name="txtRow7Col6">
+      <widget class="QLineEdit" name="txtRow7Col6">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1935,16 +2403,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="10" column="4">
-      <widget class="QPlainTextEdit" name="txtRow8Col3">
+      <widget class="QLineEdit" name="txtRow8Col3">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1957,16 +2431,22 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QPlainTextEdit" name="txtRow1Col2">
+      <widget class="QLineEdit" name="txtRow1Col2">
        <property name="minimumSize">
         <size>
          <width>31</width>
@@ -1979,10 +2459,16 @@
          <height>31</height>
         </size>
        </property>
+       <property name="inputMask">
+        <string>9</string>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
-       <property name="plainText">
+       <property name="plainText" stdset="0">
         <string>0</string>
        </property>
       </widget>
@@ -2035,6 +2521,93 @@
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>txtRow0Col0</tabstop>
+  <tabstop>txtRow0Col1</tabstop>
+  <tabstop>txtRow0Col2</tabstop>
+  <tabstop>txtRow0Col3</tabstop>
+  <tabstop>txtRow0Col4</tabstop>
+  <tabstop>txtRow0Col5</tabstop>
+  <tabstop>txtRow0Col6</tabstop>
+  <tabstop>txtRow0Col7</tabstop>
+  <tabstop>txtRow0Col8</tabstop>
+  <tabstop>txtRow1Col0</tabstop>
+  <tabstop>txtRow1Col1</tabstop>
+  <tabstop>txtRow1Col2</tabstop>
+  <tabstop>txtRow1Col3</tabstop>
+  <tabstop>txtRow1Col4</tabstop>
+  <tabstop>txtRow1Col5</tabstop>
+  <tabstop>txtRow1Col6</tabstop>
+  <tabstop>txtRow1Col7</tabstop>
+  <tabstop>txtRow1Col8</tabstop>
+  <tabstop>txtRow2Col0</tabstop>
+  <tabstop>txtRow2Col1</tabstop>
+  <tabstop>txtRow2Col2</tabstop>
+  <tabstop>txtRow2Col3</tabstop>
+  <tabstop>txtRow2Col4</tabstop>
+  <tabstop>txtRow2Col5</tabstop>
+  <tabstop>txtRow2Col6</tabstop>
+  <tabstop>txtRow2Col7</tabstop>
+  <tabstop>txtRow2Col8</tabstop>
+  <tabstop>txtRow3Col0</tabstop>
+  <tabstop>txtRow3Col1</tabstop>
+  <tabstop>txtRow3Col2</tabstop>
+  <tabstop>txtRow3Col3</tabstop>
+  <tabstop>txtRow3Col4</tabstop>
+  <tabstop>txtRow3Col5</tabstop>
+  <tabstop>txtRow3Col6</tabstop>
+  <tabstop>txtRow3Col7</tabstop>
+  <tabstop>txtRow3Col8</tabstop>
+  <tabstop>txtRow4Col0</tabstop>
+  <tabstop>txtRow4Col1</tabstop>
+  <tabstop>txtRow4Col2</tabstop>
+  <tabstop>txtRow4Col3</tabstop>
+  <tabstop>txtRow4Col4</tabstop>
+  <tabstop>txtRow4Col5</tabstop>
+  <tabstop>txtRow4Col6</tabstop>
+  <tabstop>txtRow4Col7</tabstop>
+  <tabstop>txtRow4Col8</tabstop>
+  <tabstop>txtRow5Col0</tabstop>
+  <tabstop>txtRow5Col1</tabstop>
+  <tabstop>txtRow5Col2</tabstop>
+  <tabstop>txtRow5Col3</tabstop>
+  <tabstop>txtRow5Col4</tabstop>
+  <tabstop>txtRow5Col5</tabstop>
+  <tabstop>txtRow5Col6</tabstop>
+  <tabstop>txtRow5Col7</tabstop>
+  <tabstop>txtRow5Col8</tabstop>
+  <tabstop>txtRow6Col0</tabstop>
+  <tabstop>txtRow6Col1</tabstop>
+  <tabstop>txtRow6Col2</tabstop>
+  <tabstop>txtRow6Col3</tabstop>
+  <tabstop>txtRow6Col4</tabstop>
+  <tabstop>txtRow6Col5</tabstop>
+  <tabstop>txtRow6Col6</tabstop>
+  <tabstop>txtRow6Col7</tabstop>
+  <tabstop>txtRow6Col8</tabstop>
+  <tabstop>txtRow7Col0</tabstop>
+  <tabstop>txtRow7Col1</tabstop>
+  <tabstop>txtRow7Col2</tabstop>
+  <tabstop>txtRow7Col3</tabstop>
+  <tabstop>txtRow7Col4</tabstop>
+  <tabstop>txtRow7Col5</tabstop>
+  <tabstop>txtRow7Col6</tabstop>
+  <tabstop>txtRow7Col7</tabstop>
+  <tabstop>txtRow7Col8</tabstop>
+  <tabstop>txtRow8Col0</tabstop>
+  <tabstop>txtRow8Col1</tabstop>
+  <tabstop>txtRow8Col2</tabstop>
+  <tabstop>txtRow8Col3</tabstop>
+  <tabstop>txtRow8Col4</tabstop>
+  <tabstop>txtRow8Col5</tabstop>
+  <tabstop>txtRow8Col6</tabstop>
+  <tabstop>txtRow8Col7</tabstop>
+  <tabstop>txtRow8Col8</tabstop>
+  <tabstop>newButton</tabstop>
+  <tabstop>solveButton</tabstop>
+  <tabstop>clearButton</tabstop>
+  <tabstop>inputButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
  <designerdata>

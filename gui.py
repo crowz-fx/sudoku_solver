@@ -18,10 +18,12 @@
 import sys
 from functools import partial
 
-from PySide6 import QtWidgets
+from PySide6 import QtWidgets, QtCore
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice, QSize
+
+from solver import Solver
 
 
 class Gui:
@@ -189,14 +191,19 @@ class Gui:
                 f"Window failed to instantiate with error [{self.loader.errorString()}]"
             )
 
+        # Centre all QLineEdit boxes - dumb i know but gui editor is poop for it
+        for box in self.get_all_widgets_by_type(QtWidgets.QLineEdit):
+            box.setAlignment(QtCore.Qt.AlignCenter)
+            box.setText(str(0))
+
         self.get_widget_by_type_and_name(
             "clearButton", QtWidgets.QPushButton
         ).clicked.connect(self.clear_board)
         self.get_widget_by_type_and_name(
             "newButton", QtWidgets.QPushButton
         ).clicked.connect(
-            partial(self.set_board_values, "X")
-        )  # TODO - change
+            partial(self.set_board_values, "0")
+        )  # TODO - change to generate function when implemented
         self.get_widget_by_type_and_name(
             "solveButton", QtWidgets.QPushButton
         ).clicked.connect(self.solve_board)
@@ -231,7 +238,7 @@ class Gui:
         )
 
         board_squares = self.get_all_widgets_by_type_and_name_starting_with(
-            name="txt", widget_type=QtWidgets.QPlainTextEdit
+            name="txt", widget_type=QtWidgets.QLineEdit
         )
 
         for square in board_squares:
@@ -243,7 +250,41 @@ class Gui:
         Calls into the solver class and processes
         """
         print("SolveButton - Clicked")
-        # TODO - add
+
+        self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
+            "Solving..."
+        )
+        for button in self.get_all_widgets_by_type(QtWidgets.QPushButton):
+            button.setEnabled(False)
+
+        board = []
+        board_valid = True
+        for i in range(9):
+            row = []
+            for j in range(9):
+                try:
+                    row.append(int(self.get_board_value(i, j)))
+                except ValueError:
+                    board_valid = False
+                    continue
+            board.append(row)
+
+        result = False
+        if board_valid:
+            result = Solver().solve(board, self)
+
+        label_value = "Not Solvable"
+        if result and board_valid:
+            label_value = "Solved"
+        elif not board_valid:
+            label_value = "Invalid Board"
+
+        self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
+            label_value
+        )
+
+        for button in self.get_all_widgets_by_type(QtWidgets.QPushButton):
+            button.setEnabled(True)
 
     def generate_new_board(self, game_ease=0.5):
         """Bound to the `generate` button and does what it says on the tin
@@ -281,8 +322,11 @@ class Gui:
         value : int
         """
         self.get_widget_by_type_and_name(
-            f"txtRow{row}Col{column}", QtWidgets.QPlainTextEdit
-        ).setPlainText(value)
+            f"txtRow{row}Col{column}", QtWidgets.QLineEdit
+        ).setText(str(value))
+
+        # TODO - dirty hack to process gui updates, should change solve to work on new thread
+        self.app.processEvents()
 
     def get_board_value(self, row, column):
         """For given `row` and `column` get it's value
@@ -300,8 +344,8 @@ class Gui:
             Value of the cell, not always an int hence str
         """
         return self.get_widget_by_type_and_name(
-            f"txtRow{row}Col{column}", QtWidgets.QPlainTextEdit
-        ).getPlainText()
+            f"txtRow{row}Col{column}", QtWidgets.QLineEdit
+        ).text()
 
     def set_board_values(self, value="0"):
         """Utility function to set all of the cells to a given `value`
@@ -312,12 +356,15 @@ class Gui:
             What to set the cell value to
         """
         board_squares = self.get_all_widgets_by_type_and_name_starting_with(
-            name="txt", widget_type=QtWidgets.QPlainTextEdit
+            name="txt", widget_type=QtWidgets.QLineEdit
         )
 
         for square in board_squares:
-            square.setPlainText(value)
+            square.setText(value)
 
     def clear_board(self):
         """Bound to the `clear` button, will set all of the cells to be blank"""
         self.set_board_values("")
+        self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
+            "Ready"
+        )

@@ -46,7 +46,7 @@ class Solver:
         # We couldn't find an empty cell, return None, None
         return (None, None)
 
-    def solve(self, board):
+    def solve(self, board, gui=None):
         """The money shot, the actual solve function to solve a sudoku puzzle
 
         This works through backtracking, try a new value, does it fit, if yes then
@@ -56,6 +56,8 @@ class Solver:
         ----------
         board : list[list[int]]
             Representation of the board in list of lists, 0's are for unsolved
+        gui : Gui
+            If not None, it will call back and update the value in real time in the gui
 
         Return
         ------
@@ -77,12 +79,18 @@ class Solver:
 
                 board[row][column] = guess
 
+                if gui is not None:
+                    gui.set_board_value(row, column, guess)
+
                 # Recursively call solve() until it's solved
-                if self.solve(board):
+                if self.solve(board, gui):
                     return True
 
             # This guess wasn't the one, set back to default value, and backtrack
             board[row][column] = 0
+
+            if gui is not None:
+                gui.set_board_value(row, column, 0)
 
         # Hmm, looks like this is unsolvable, go back up the chain
         return False
