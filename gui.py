@@ -275,6 +275,9 @@ class Gui:
         self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText(
             "Capturing..."
         )
+        self.get_widget_by_type_and_name("operationsLabel", QtWidgets.QLabel).setText(
+            "Adding..."
+        )
         for button in self.get_all_widgets_by_type(QtWidgets.QPushButton):
             button.setEnabled(False)
 
@@ -291,8 +294,9 @@ class Gui:
             board.append(row)
 
         result = False
+        solver = Solver()
         if board_valid:
-            result = Solver().solve(board, self)
+            result = solver.solve(board, self)
 
         wall_end_time = time.time()
         cpu_end_time = time.process_time()
@@ -313,6 +317,9 @@ class Gui:
         self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
             label_value
         )
+        self.get_widget_by_type_and_name("operationsLabel", QtWidgets.QLabel).setText(
+            str(solver.operation_count)
+        )
 
         for button in self.get_all_widgets_by_type(QtWidgets.QPushButton):
             button.setEnabled(True)
@@ -332,6 +339,9 @@ class Gui:
         print("NewButton - Clicked")
         # TODO - add
         self.set_board_values("0")
+        self.get_widget_by_type_and_name("operationsLabel", QtWidgets.QLabel).setText(
+            "0"
+        )
 
         self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
             "Ready"
@@ -423,3 +433,6 @@ class Gui:
         )
         self.set_progress_bar_value(0)
         self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText("0")
+        self.get_widget_by_type_and_name("operationsLabel", QtWidgets.QLabel).setText(
+            "0"
+        )

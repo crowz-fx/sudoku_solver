@@ -45,14 +45,15 @@ if __name__ == "__main__":
         result = False
         final_board = []
         output = args.output
+        run = Run()
 
         if hasattr(args, "oneliner"):
             print(f"OneLiner=[{args.oneliner}], Output=[{output}]")
-            result, final_board = Run().process_oneliner(args.oneliner)
+            result, final_board = run.process_oneliner(args.oneliner)
 
         elif hasattr(args, "file"):
             print(f"File=[{args.file}], Output=[{output}]")
-            result, final_board = Run().process_file(args.file)
+            result, final_board = run.process_file(args.file)
 
         wall_end_time = time.time()
         cpu_end_time = time.process_time()
@@ -62,6 +63,7 @@ if __name__ == "__main__":
 
         print(f"Solved? - {result}")
         print(f"Time - CPU=[{round(cpu_time, 2)}]seconds, Wall=[{round(wall_time, 2)}]seconds")
+        print(f"Operations - {run.solver.operation_count}")
 
         if output == "file":
             file_contents = []

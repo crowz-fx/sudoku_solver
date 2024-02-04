@@ -28,7 +28,7 @@ class Run:
 
     def __init__(self) -> None:
         """"""
-        pass
+        self.solver = Solver()
 
     def process_oneliner(self, input):
         """
@@ -75,7 +75,7 @@ class Run:
                     "Your oneliner input is not valid, a row doesn't have 9 digits!"
                 )
 
-        return Solver().solve(board), board
+        return self.solver.solve(board), board
 
     def process_file(self, file_name):
         """
@@ -90,8 +90,8 @@ class Run:
         Return
         ------
         tuple
-          (True/False, list[list[int]]) - Result from solve and where the board
-          processing ended (would be complete if solveable)
+            (True/False, list[list[int]]) - Result from solve and where the board
+            processing ended (would be complete if solveable)
         """
         file_contents = FileUtils.read_file(file_name)
         board = []
@@ -100,4 +100,4 @@ class Run:
             line = line.replace("\n", "")
             board.append(list(map(int, line.split(","))))
 
-        return Solver().solve(board), board
+        return self.solver.solve(board), board

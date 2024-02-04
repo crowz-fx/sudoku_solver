@@ -24,6 +24,15 @@ class Solver:
 
     def __init__(self) -> None:
         """"""
+        self.operation_count = 0
+
+    def reset_operation_count(self):
+        """Reset the operation count
+
+        We don't always instantiate a new solver class each time, need a 
+        mechanism to reset when we want to solve another puzzle
+        """
+        self.operation_count = 0
 
     def find_next_cell_to_solve(self, board):
         """Method to find the next cell in the board to solve
@@ -40,6 +49,7 @@ class Solver:
         """
         for row in range(0, 9):
             for column in range(0, 9):
+                self.operation_count += 1
                 if board[row][column] == 0:
                     return (row, column)
 
@@ -73,11 +83,13 @@ class Solver:
 
         # We have found a spot to put a guess, now make a guess between valid sudoku values 1-9
         for guess in range(1, 10):
+            self.operation_count += 1
 
             # If the guess is a valid value and doesn't break the rules, set it and continue
             if self.check_guess_is_valid(board, row, column, guess):
 
                 board[row][column] = guess
+                self.operation_count += 1
 
                 if gui is not None:
                     gui.set_board_value(row, column, guess)
@@ -86,10 +98,12 @@ class Solver:
 
                 # Recursively call solve() until it's solved
                 if self.solve(board, gui):
+                    self.operation_count += 1
                     return True
 
             # This guess wasn't the one, set back to default value, and backtrack
             board[row][column] = 0
+            self.operation_count += 1
 
             if gui is not None:
                 gui.set_board_value(row, column, 0)
@@ -120,11 +134,12 @@ class Solver:
         """
         if guess in board[row]:
             return False
+        self.operation_count += 1
 
         # Validate the guess doesn't exist in the row or any row at this column
         if guess in [board[range_row][column] for range_row in range(9)]:
             return False
-
+        self.operation_count += (1 * 9)
         # Validate the 3x3 grid, final rule
         #   1. There are 3 "grids" or "chunks", 0, 1 and 2
         #   2. Reduce the row/column value into one of these "chunks" using modulo
@@ -134,8 +149,11 @@ class Solver:
         row_grid = (row // 3) * 3
         column_grid = (column // 3) * 3
 
+        self.operation_count += 2
+
         for grid_row in range(row_grid, row_grid + 3):
             for grid_column in range(column_grid, column_grid + 3):
+                self.operation_count += 1
                 if guess == board[grid_row][grid_column]:
                     return False
 
