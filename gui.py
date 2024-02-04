@@ -169,7 +169,7 @@ class Gui:
             or None
         )
 
-    def load(self, window_size=(640, 470)):
+    def load(self, window_size=(640, 560)):
         """Method to load the UI file and process 'precursor' setup such as binding buttons
 
         Parameters
@@ -196,6 +196,19 @@ class Gui:
         for box in self.get_all_widgets_by_type(QtWidgets.QLineEdit):
             box.setAlignment(QtCore.Qt.AlignCenter)
             box.setText(str(0))
+
+        self.get_widget_by_type_and_name(
+            "difficultySelectBox", QtWidgets.QComboBox
+        ).addItem("Easy", 0.35)
+        self.get_widget_by_type_and_name(
+            "difficultySelectBox", QtWidgets.QComboBox
+        ).addItem("Medium", 0.45)
+        self.get_widget_by_type_and_name(
+            "difficultySelectBox", QtWidgets.QComboBox
+        ).addItem("Hard", 0.60)
+        self.get_widget_by_type_and_name(
+            "difficultySelectBox", QtWidgets.QComboBox
+        ).addItem("Expert", 0.70)
 
         self.set_progress_bar_value(0)
 

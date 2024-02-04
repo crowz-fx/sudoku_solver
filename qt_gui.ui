@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>529</height>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,12 +20,12 @@
       <x>0</x>
       <y>320</y>
       <width>641</width>
-      <height>141</height>
+      <height>230</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="bottomLayout">
      <property name="spacing">
-      <number>10</number>
+      <number>5</number>
      </property>
      <property name="topMargin">
       <number>20</number>
@@ -34,7 +34,10 @@
       <number>20</number>
      </property>
      <item>
-      <layout class="QHBoxLayout" name="progressLayout">
+      <layout class="QHBoxLayout" name="progressLayout" stretch="0">
+       <property name="spacing">
+        <number>10</number>
+       </property>
        <property name="leftMargin">
         <number>50</number>
        </property>
@@ -89,18 +92,24 @@
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="statsLayout">
+      <layout class="QHBoxLayout" name="statsLayout" stretch="0">
        <property name="spacing">
         <number>0</number>
        </property>
        <property name="leftMargin">
-        <number>50</number>
+        <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>50</number>
+        <number>0</number>
        </property>
        <item>
-        <layout class="QHBoxLayout" name="timeLayout">
+        <layout class="QHBoxLayout" name="timeLayout" stretch="0,1">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>270</number>
+         </property>
          <item>
           <widget class="QLabel" name="timeLabelLabel">
            <property name="text">
@@ -117,41 +126,79 @@
          </item>
         </layout>
        </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="statusLayout" stretch="0,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>281</number>
+       </property>
        <item>
-        <layout class="QHBoxLayout" name="operationsLayout">
-         <item>
-          <widget class="QLabel" name="operationsLabelLabel">
-           <property name="text">
-            <string>Operations:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="operationsLabel">
-           <property name="text">
-            <string>0</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLabel" name="statusLabelLabel">
+         <property name="text">
+          <string>Status:</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="statusLayout">
-         <item>
-          <widget class="QLabel" name="statusLabelLabel">
-           <property name="text">
-            <string>Status:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="statusLabel">
-           <property name="text">
-            <string>Ready</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLabel" name="statusLabel">
+         <property name="text">
+          <string>Ready</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="operationsLayout" stretch="0,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>253</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="operationsLabelLabel">
+         <property name="text">
+          <string>Operations:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="operationsLabel">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="difficultyLayout" stretch="0,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>265</number>
+       </property>
+       <property name="rightMargin">
+        <number>150</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="difficultyLabelLabel">
+         <property name="text">
+          <string>Difficulty:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="difficultySelectBox"/>
        </item>
       </layout>
      </item>
