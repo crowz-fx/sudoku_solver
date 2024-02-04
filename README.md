@@ -15,15 +15,15 @@ Sudoku solver that can operate in two modes `headless` and `gui`
 - Ability to input a puzzle to be solved
 - Can generate a new puzzle that you can input or ask to be solved
 
-TODO - add screenshot
+![gui demo](media/gui.gif)
 
 ### Headless
 - Can supply a puzzle in two ways
   - `oneliner` - one continuous csv string of the puzzle
+    - ![headless oneliner demo](media/headless_oneliner.gif)
   - `file` - file with puzzle within 
+    - ![headless file demo](media/headless_file.gif)
 - Will output the solved puzzle to either console or a file depending on parameter supplied
-
-TODO - add screenshot
 
 ## Compatability
 Built and tested with python `3.11.6`, all dependencies are frozen and pinned in [requirements.txt](requirements.txt)
