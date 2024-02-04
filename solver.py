@@ -81,6 +81,8 @@ class Solver:
 
                 if gui is not None:
                     gui.set_board_value(row, column, guess)
+                    # Magic mapping to calculate progress lol
+                    gui.set_progress_bar_value((((row + 1) * 10) + column + 2))
 
                 # Recursively call solve() until it's solved
                 if self.solve(board, gui):

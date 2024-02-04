@@ -196,14 +196,16 @@ class Gui:
             box.setAlignment(QtCore.Qt.AlignCenter)
             box.setText(str(0))
 
+        self.set_progress_bar_value(0)
+
         self.get_widget_by_type_and_name(
             "clearButton", QtWidgets.QPushButton
         ).clicked.connect(self.clear_board)
         self.get_widget_by_type_and_name(
             "newButton", QtWidgets.QPushButton
         ).clicked.connect(
-            partial(self.set_board_values, "0")
-        )  # TODO - change to generate function when implemented
+            partial(self.generate_new_board, 0.5)  # TODO - add in game ease on gen
+        )
         self.get_widget_by_type_and_name(
             "solveButton", QtWidgets.QPushButton
         ).clicked.connect(self.solve_board)
@@ -300,6 +302,12 @@ class Gui:
         """
         print("NewButton - Clicked")
         # TODO - add
+        self.set_board_values("0")
+
+        self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
+            "Ready"
+        )
+        self.set_progress_bar_value(0)
 
     def run(self):
         """Brains of the operation, post load, this is executed to actually
@@ -309,6 +317,21 @@ class Gui:
         """
         self.window.show()
         sys.exit(self.app.exec())
+
+    def set_progress_bar_value(self, value):
+        """Set the value for progress on the progress bar
+
+        Parameters
+        ----------
+        value : int
+            Value between 0 to 100
+        """
+        self.get_widget_by_type_and_name(
+            "progressBar", QtWidgets.QProgressBar
+        ).setValue(value)
+
+        # Dirty hack to process gui updates
+        self.app.processEvents()
 
     def set_board_value(self, row, column, value):
         """For given `row`, `column` set it to the value `value`
@@ -325,7 +348,7 @@ class Gui:
             f"txtRow{row}Col{column}", QtWidgets.QLineEdit
         ).setText(str(value))
 
-        # TODO - dirty hack to process gui updates, should change solve to work on new thread
+        # Dirty hack to process gui updates
         self.app.processEvents()
 
     def get_board_value(self, row, column):
@@ -368,3 +391,4 @@ class Gui:
         self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
             "Ready"
         )
+        self.set_progress_bar_value(0)
