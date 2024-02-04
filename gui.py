@@ -16,6 +16,7 @@
 """
 
 import sys
+import time
 from functools import partial
 
 from PySide6 import QtWidgets, QtCore
@@ -252,9 +253,14 @@ class Gui:
         Calls into the solver class and processes
         """
         print("SolveButton - Clicked")
+        cpu_start_time = time.process_time()
+        wall_start_time = time.time()
 
         self.get_widget_by_type_and_name("statusLabel", QtWidgets.QLabel).setText(
             "Solving..."
+        )
+        self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText(
+            "Capturing..."
         )
         for button in self.get_all_widgets_by_type(QtWidgets.QPushButton):
             button.setEnabled(False)
@@ -274,6 +280,16 @@ class Gui:
         result = False
         if board_valid:
             result = Solver().solve(board, self)
+
+        wall_end_time = time.time()
+        cpu_end_time = time.process_time()
+
+        cpu_time = cpu_end_time - cpu_start_time
+        wall_time = wall_end_time - wall_start_time
+
+        self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText(
+            f"CPU={round(cpu_time, 2)}, Wall={round(wall_time, 2)}"
+        )
 
         label_value = "Not Solvable"
         if result and board_valid:
@@ -308,6 +324,7 @@ class Gui:
             "Ready"
         )
         self.set_progress_bar_value(0)
+        self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText("0")
 
     def run(self):
         """Brains of the operation, post load, this is executed to actually
@@ -392,3 +409,4 @@ class Gui:
             "Ready"
         )
         self.set_progress_bar_value(0)
+        self.get_widget_by_type_and_name("timeLabel", QtWidgets.QLabel).setText("0")

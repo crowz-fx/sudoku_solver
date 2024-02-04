@@ -16,6 +16,7 @@
 """
 
 import signal
+import time
 from pprint import pprint
 
 from args import Args
@@ -38,6 +39,9 @@ if __name__ == "__main__":
         gui.load()
         gui.run()
     else:
+        cpu_start_time = time.process_time()
+        wall_start_time = time.time()
+
         result = False
         final_board = []
         output = args.output
@@ -50,7 +54,15 @@ if __name__ == "__main__":
             print(f"File=[{args.file}], Output=[{output}]")
             result, final_board = Run().process_file(args.file)
 
+        wall_end_time = time.time()
+        cpu_end_time = time.process_time()
+
+        cpu_time = cpu_end_time - cpu_start_time
+        wall_time = wall_end_time - wall_start_time
+
         print(f"Solved? - {result}")
+        print(f"Time - CPU=[{round(cpu_time, 2)}]seconds, Wall=[{round(wall_time, 2)}]seconds")
+
         if output == "file":
             file_contents = []
             file = "output.txt"

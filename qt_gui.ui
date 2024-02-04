@@ -104,7 +104,7 @@
          <item>
           <widget class="QLabel" name="timeLabelLabel">
            <property name="text">
-            <string>Time:</string>
+            <string>Time (s):</string>
            </property>
           </widget>
          </item>
