@@ -34,31 +34,31 @@ Follow the steps in [Setup](#setup) first
 ## Help
 There is argument parsing at all levels, just tack on -h to see usage instructions, examples:
 ```bash
-python3 main.py -h
-python3 main.py gui -h
-python3 main.py headless oneliner -h
+python main.py -h
+python main.py gui -h
+python main.py headless oneliner -h
 ```
 
 ### GUI
 ```bash
-python3 main.py gui
+python main.py gui
 ```
 
 ### Headless
 #### OneLiner
 ```bash
-python3 main.py headless oneliner 0,0,1,2,6,0...
+python main.py headless oneliner 0,0,1,2,6,0...
 ```
 
 #### File
 ```bash
-python3 main.py headless file puzzle.txt
+python main.py headless file puzzle.txt
 ```
 
 ## Setup
 1. Setup python virtual environment
 ```bash
-python3 -m venv venv
+python -m venv venv
 ```
 2. Activate and install dependencies
 ```bash

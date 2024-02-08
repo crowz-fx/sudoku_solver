@@ -169,7 +169,7 @@ class Gui:
             or None
         )
 
-    def load(self, window_size=(640, 560)):
+    def load(self, window_size=(640, 580)):
         """Method to load the UI file and process 'precursor' setup such as binding buttons
 
         Parameters
